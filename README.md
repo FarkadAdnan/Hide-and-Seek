@@ -10,5 +10,6 @@ Skill development arising from a subjective, multifactorial approach. With the h
 POLICY OPTIMIZATION
 Agents are trained using self-play, which acts as a natural curriculum as agents always play opponents of an appropriate level.
 Agent policies consist of two separate networks with different parameters - a policy network that produces an allocation of action and a critical network that predicts discounted future returns. Policies are improved using public advantage estimation, and training is conducted using a rapid (OpenAI, 2018), large-scale distribution of the RL framework. We use decentralized implementation and centralized training. At the time of execution, each agent gives his actions only his observations and his own memory state. At the time of optimization, we use an omniscient central value function for each agent, which can access the whole environment state without any persuasive information due to visibility.
+
 ![4](https://user-images.githubusercontent.com/35774039/119997434-68fa3000-bfd8-11eb-9074-6b085c133e46.JPG)
 
